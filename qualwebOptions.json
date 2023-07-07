@@ -1,0 +1,53 @@
+{
+  "urls": [],
+  "log": {
+    "console": true
+  },
+  "execute": {
+    "act": false,
+    "wcag": true,
+    "bp": true
+  },
+  "wcag-techniques": {
+    "exclude": [
+      "H71",
+      "H39",
+      "H73",
+      "H36",
+      "SCR20",
+      "H28",
+      "G141",
+      "F46",
+      "F47",
+      "H43",
+      "H59",
+      "H88",
+      "G162",
+      "H51",
+      "F55",
+      "H63",
+      "F59",
+      "C12",
+      "C13",
+      "C14",
+      "C19",
+      "F4",
+      "F24",
+      "H48"
+    ],
+    "levels": ["A", "AA", "AAA"],
+    "principles": ["Perceivable", "Operable", "Understandable", "Robust"]
+  },
+  "best-practices": {
+    "exclude": [
+      "QW-BP5",
+      "QW-BP12",
+      "QW-BP11",
+      "QW-BP10",
+      "QW-BP14",
+      "QW-BP15",
+      "QW-BP18"
+    ]
+  },
+  "translate": "en"
+}

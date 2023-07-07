@@ -1,0 +1,1251 @@
+{
+  "act-rules": {
+    "QW-ACT-R1": {
+      "name": "Página HTML tem um título",
+      "description": "Esta regra verifica se a página HTML tem um título.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "O elemento` title` existe e não está vazio (''). ",
+        "F1": "O elemento` title` não existe. ",
+        "F2": "O elemento` title` está vazio (''). ",
+        "F3": "O elemento` title` não está no mesmo contexto "
+      }
+    },
+    "QW-ACT-R2": {
+      "name": "HTML tem atributo Lang",
+      "description": "Esta regra verifica se o elemento HTML possui um atributo Lang ou XML: Lang não vazios.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "O atributo` Lang` existe e tem um valor. ",
+        "F1": "O atributo` Lang` não existe ou está vazio (''). "
+      }
+    },
+    "QW-ACT-R3": {
+      "name": "Html Lang e XML: Lang Match",
+      "description": "A regra verifica que, para o elemento HTML, não há incompatibilidade entre o idioma principal em atributos Lang e XML: Lang não vazios, se ambos forem usados.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "Os atributos` lang` e `xml: lang` têm o mesmo valor.",
+        "F1": "Os atributos` lang` e `xml: lang` não têm o mesmo valor."
+      }
+    },
+    "QW-ACT-R4": {
+      "name": "Meta-refresch sem atraso",
+      "description": "Esta regra verifica se o elemento meta não é usado para redirecionamento ou refrescante.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "O alvo de teste refresca/redireciona imediatamente.",
+        "P2": "O alvo de teste refresca/redireciona após mais de 20 horas.",
+        "F1": "O alvo de teste atualiza após {segundos} segundos.",
+        "F2": "O alvo de teste redireciona após {segundos} segundos."
+      }
+    },
+    "QW-ACT-R5": {
+      "name": "Validade do atributo html lang",
+      "description": "Esta regra verifica o atributo Lang ou XML: Lang possui uma subtago de linguagem válida.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "O atributo` Lang` tem um valor válido. ",
+        "F1": "O atributo` Lang` não possui um valor válido. "
+      }
+    },
+    "QW-ACT-R6": {
+      "name": "O botão de imagem tem nome acessível",
+      "description": "Esta regra verifica se cada elemento do botão de imagem tem um nome acessível.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "O alvo de teste tem um nome acessível.",
+        "F1": "O alvo de teste não tem um nome acessível."
+      }
+    },
+    "QW-ACT-R7": {
+      "name": "Orientação da página não se restringe usando a propriedade CSS Transform",
+      "description": "Esta regra verifica se o conteúdo da página não é restrito à orientação para paisagem ou retrato usando a propriedade CSS transforma.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "Uma página em que a propriedade CSS Transform possui a função Rotatez transformada condicionalmente aplicada no recurso de mídia de orientação, que não restringe o elemento à orientação de retratos ou paisagens",
+        "F1": "Uma página em que a propriedade CSS Transform possui a função de transformação rotativa aplicada condicionalmente no recurso de meios de orientação que restringe o elemento à orientação da paisagem"
+      }
+    },
+    "QW-ACT-R9": {
+      "name": "Links com nomes acessíveis idênticos têm propósito equivalente",
+      "description": "Esta regra verifica que os links com nomes acessíveis idênticos resolvem o mesmo recurso ou recursos equivalentes",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "Os links` com o mesmo nome acessível têm conteúdo igual. ",
+        "F1": "Os` links` com o mesmo nome acessível têm conteúdo diferente. Verificar se o conteúdo é equivalente. "
+      }
+    },
+    "QW-ACT-R10": {
+      "name": "Os elementos` iframe` com nomes acessíveis idênticos têm propósito equivalente ",
+      "description": "Esta regra verifica se os elementos` iframe` com nomes acessíveis idênticos incorporam o mesmo recurso ou recursos equivalentes. ",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "Os `iframes` com o mesmo nome acessível têm conteúdo igual.",
+        "F1": "Os `iframes` com o mesmo nome acessível têm conteúdo diferente. "
+      }
+    },
+    "QW-ACT-R11": {
+      "name": "Button tem nome acessível",
+      "description": "Esta regra verifica se cada elemento do botão tem um nome acessível.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "O alvo de teste tem um nome acessível.",
+        "F1": "O alvo de teste não possui um nome acessível ou está vazio ('')."
+      }
+    },
+    "QW-ACT-R12": {
+      "name": "Link tem nome acessível",
+      "description": "Esta regra verifica se cada link tem um nome acessível.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "O alvo de teste tem um nome acessível.",
+        "F1": "O alvo de teste não possui um nome acessível ou está vazio ('')."
+      }
+    },
+    "QW-ACT-R13": {
+      "name": "Elemento com` aria-hidden` não tem conteúdo focalizado ",
+      "description": "Esta regra verifica se os elementos com um atributo oculto da Aria não contêm elementos focalizáveis.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "As crianças do Teste Target não são focadas.",
+        "P2": "O alvo de teste não é focado.",
+        "F1": "O alvo de teste tem crianças focadas.",
+        "F2": "Esse alvo de teste é focado."
+      }
+    },
+    "QW-ACT-R14": {
+      "name": "Meta viewport não impede o zoom",
+      "description": "Esta regra verifica se o elemento meta mantém a capacidade do agente do usuário de zoom",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "O elemento` meta` com um atributo `name = 'viewport'` não define os valores` escala máxima e escalável",
+        "P2": "O elemento` meta` com um atributo `name = 'viewport' 'mantém a capacidade do agente do usuário para aumentar o zoom.",
+        "F1": "O elemento` meta` com um atributo `name = 'viewport'` abole a capacidade do agente do usuário de aumentar o zoom com o usuário = não ou a escala máxima <2."
+      }
+    },
+    "QW-ACT-R15": {
+      "name": "Áudio ou vídeo não tem áudio que reproduz automaticamente",
+      "description": "Esta regra verifica se o áudio automático não dura mais de 3 segundos, ou o áudio tem um mecanismo de controle para parar ou silenciar.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "A regra passou por causa da regra",
+        "W1": "A regra não pode dizer por causa da regra",
+        "F1": "A regra falhou por causa da regra"
+      }
+    },
+    "QW-ACT-R16": {
+      "name": "O controle do formulário tem nome acessível",
+      "description": "O controle do formulário tem nome acessível",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "O alvo de teste tem um nome acessível.",
+        "F1": "O nome acessível do alvo de teste não existe ou está vazio ('')."
+      }
+    },
+    "QW-ACT-R17": {
+      "name": "Imagem tem nome acessível",
+      "description": "Esta regra verifica se cada imagem que não é marcada como decorativa tem um nome acessível.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "O alvo de teste é decorativo.",
+        "P2": "O alvo de teste tem um nome acessível.",
+        "F1": "O alvo de teste não tem um nome acessível."
+      }
+    },
+    "QW-ACT-R18": {
+      "name": "O valor do atributo` id` é único ",
+      "description": "Esta regra verifica se todos os valores de atributo de ID em uma única página são únicos.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "O alvo de teste possui um atributo 'id' exclusivo.",
+        "F1": "Vários elementos têm o mesmo atributo 'id' "
+      }
+    },
+    "QW-ACT-R19": {
+      "name": "O elemento iframe tem nome acessível",
+      "description": "Esta regra verifica se cada elemento do iframe tem um nome acessível.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "O alvo de teste tem um nome acessível.",
+        "F1": "O nome acessível do alvo de teste não existe ou está vazio ('')."
+      }
+    },
+    "QW-ACT-R20": {
+      "name": "Atributo de função tem valor válido",
+      "description": "Esta regra verifica se cada atributo de função tem um valor válido.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "O alvo de teste possui um atributo 'função' válido.",
+        "F1": "O alvo de teste possui um atributo inválido de 'função'"
+      }
+    },
+    "QW-ACT-R21": {
+      "name": "Elemento SVG com função explícita tem nome acessível",
+      "description": "Esta regra verifica se cada elemento de imagem SVG que é explicitamente incluído na árvore de acessibilidade tem um nome acessível.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "O alvo de teste tem um nome acessível.",
+        "F1": "O nome acessível do alvo de teste não existe ou está vazio ('')."
+      }
+    },
+    "QW-ACT-R22": {
+      "name": "O elemento dentro do corpo tem atributo válido Lang",
+      "description": "Esta regra verifica se o atributo lang de um elemento no corpo da página tem uma letra de linguagem primária válida.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "O alvo de teste possui um atributo 'lang` válido.",
+        "F1": "O alvo de teste possui um atributo inválido` lang` "
+      }
+    },
+    "QW-ACT-R23": {
+      "name": "Conteúdo visual do elemento de vídeo tem alternativa acessível",
+      "description": "Esta regra verifica se os elementos de vídeo com áudio têm uma alternativa para o conteúdo do vídeo como áudio ou como texto.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "A regra passou por causa da regra",
+        "W1": "A regra não pode dizer por causa da regra",
+        "F1": "A regra falhou por causa da regra"
+      }
+    },
+    "QW-ACT-R24": {
+      "name": "Atributo de preenchimento automático tem valor válido",
+      "description": "Esta regra verifica se o atributo Autocompleto HTML tem um valor correto.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "O alvo de teste possui um atributo 'AutoComplete' válido.",
+        "F1": "O atributo` AutoComplete 'do alvo de teste não é válido "
+      }
+    },
+    "QW-ACT-R25": {
+      "name": "Estado ou propriedade ARIA é permitida",
+      "description": "Esta regra verifica se os estados ou propriedades da WAI-ARIA são permitidos para o elemento em que estão especificados.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "A propriedade` {att} `é suportada ou herdada pelo` função` {função}. ",
+        "F1": "A propriedade` {att} `não é herdada nem suportada pelo` função` {função}. "
+      }
+    },
+    "QW-ACT-R26": {
+      "name": "O conteúdo auditivo do elemento de vídeo tem alternativa acessível",
+      "description": "Esta regra verifica se os elementos de vídeo têm uma alternativa para informações transmitidas através do áudio.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "A regra passou por causa da regra",
+        "W1": "A regra não pode dizer por causa da regra",
+        "F1": "A regra falhou por causa da regra"
+      }
+    },
+    "QW-ACT-R27": {
+      "name": "Atributo Aria-* é definido em Wai-Ara",
+      "description": "Esta regra verifica se cada atributo Aria-* especificado é definido em Aria 1.1.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "Todos os atributos Aria-* neste elemento são definidos em Aria 1.1.",
+        "F1": "Um ou mais atributos Aria-* não são definidos no ARIA 1.1."
+      }
+    },
+    "QW-ACT-R28": {
+      "name": "Elemento com atributo de função exigiu estados e propriedades",
+      "description": "Esta regra verifica se os elementos que têm uma função explícita também especificam todos os estados e propriedades necessários",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "Os atributos necessários do alvo de teste estão listados.",
+        "P2": "A meta de teste` função` não tem estado ou propriedade necessária ",
+        "F1": "O alvo de teste tem estados ou propriedades não listados"
+      }
+    },
+    "QW-ACT-R29": {
+      "name": "Conteúdo do elemento de áudio tem um texto alternativo",
+      "description": "Esta regra verifica se apenas os elementos de áudio têm uma alternativa de texto disponível.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "A regra passou por causa da regra",
+        "W1": "A regra não pode dizer por causa da regra",
+        "F1": "A regra falhou por causa da regra"
+      }
+    },
+    "QW-ACT-R30": {
+      "name": "A etiqueta visível faz parte do nome acessível",
+      "description": "Esta regra verifica se os elementos interativos rotulados através de seu conteúdo têm seu rótulo visível como parte de seu nome acessível.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "O conteúdo completo de texto visível do alvo de teste corresponde ou está contido em seu nome acessível.",
+        "F1": "O alvo de teste não tem um nome acessível.",
+        "F2": "O conteúdo completo de texto visível da meta de teste não corresponde ou está contido em seu nome acessível"
+      }
+    },
+    "QW-ACT-R31": {
+      "name": "O conteúdo exclusivo do elemento de vídeo tem alternativa acessível",
+      "description": "Esta regra verifica se os elementos de vídeo sem áudio têm uma alternativa disponível.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "A regra passou por causa da regra",
+        "W1": "A regra não pode dizer por causa da regra",
+        "F1": "A regra falhou por causa da regra"
+      }
+    },
+    "QW-ACT-R32": {
+      "name": "O conteúdo visual do elemento de vídeo tem uma alternativa estrita acessível",
+      "description": "Esta regra verifica se os elementos de vídeo com áudio têm descrição de áudio.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "A regra passou por causa da regra",
+        "W1": "A regra não pode dizer por causa da regra",
+        "F1": "A regra falhou por causa da regra"
+      }
+    },
+    "QW-ACT-R33": {
+      "name": "Aria exigiu papel de contexto",
+      "description": "Esta regra verifica se um elemento com um papel semântico explícito existe dentro do contexto necessário.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "O pai -alvo de teste tem o contexto necessário 'função'.",
+        "F1": "O pai -alvo de teste não possui o contexto necessário 'função'"
+      }
+    },
+    "QW-ACT-R34": {
+      "name": "Estado ou propriedade ARIA tem valor válido",
+      "description": "Esta regra verifica se cada estado ou propriedade da ARIA tem um valor válido.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "O atributo Test Target` {att} `tem um valor válido.",
+        "F1": "O atributo do alvo de teste` {att} `tem um valor inválido."
+      }
+    },
+    "QW-ACT-R35": {
+      "name": "Cabeçando tem nome acessível",
+      "description": "Esta regra se aplica a qualquer elemento HTML com o papel semântico do cabeçalho que está incluído na árvore de acessibilidade",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "O alvo de teste tem um nome acessível não vazio.",
+        "F1": "O nome acessível do alvo de teste não existe ou está vazio ('')."
+      }
+    },
+    "QW-ACT-R36": {
+      "name": "Atributo dos cabeçalhos especificados em uma célula refere -se a células no mesmo elemento da tabela",
+      "description": "Esta regra verifica se os cabeçalhos atribuem em uma célula se referem a outras células no mesmo elemento de tabela com um papel semântico de ColumnHeader ou Rowheader.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "Todos os atributos dos cabeçalhos se referem a uma célula com um papel semântico do ColumnHeader de Rowheader na mesma tabela.",
+        "F1": "Os cabeçalhos atribuem` {att} `refere -se a um ID que não existe na mesma tabela.",
+        "F2": "Os cabeçalhos atribuem` {att} `refere -se a um elemento dentro da mesma tabela que não tem um papel de Rowheader ou ColumnHeader."
+      }
+    },
+    "QW-ACT-R37": {
+      "name": "O texto tem contraste mínimo",
+      "description": "Esta regra verifica se o maior contraste possível de todos os personagens de texto com seus antecedentes atende ao requisito mínimo de contraste",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "O elemento tem taxa de contraste maior que o mínimo.",
+        "P2": "Elemento não tem texto da linguagem humana.",
+        "P3": "O elemento tem gradiente com taxa de contraste maior que o mínimo.",
+        "W1": "O elemento tem uma sombra de texto que precisa de verificação manual.",
+        "W2": "Elemento tem uma imagem no fundo.",
+        "W3": "O elemento tem um gradiente que não podemos verificar.",
+        "F1": "O elemento tem taxa de contraste menor que o mínimo.",
+        "F2": "O elemento tem gradiente com taxa de contraste menor que o mínimo"
+      }
+    },
+    "QW-ACT-R38": {
+      "name": "Aria exigia elementos possuídos",
+      "description": "Esta regra verifica se um elemento com um papel semântico explícito tem pelo menos um de seus elementos próprios necessários",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "O alvo de teste possui apenas elementos com função correta.",
+        "F1": "O alvo de teste possui elementos que não têm a função correta"
+      }
+    },
+    "QW-ACT-R39": {
+      "name": "Todas as células do cabeçalho da tabela atribuíram células de dados",
+      "description": "Esta regra verifica se cada cabeçalho da tabela atribuiu células de dados em um elemento de tabela.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "O elemento do cabeçalho da coluna tem pelo menos uma célula atribuída.",
+        "F1": "O elemento do cabeçalho da coluna não possui pelo menos uma célula atribuída"
+      }
+    },
+    "QW-ACT-R40": {
+      "name": "O nó de texto em zoom não está preso com o transbordamento CSS",
+      "description": "Esta regra verifica se os nós de texto não são presos sem querer, quando uma página é ampliada para 200% em 1280 por 1024 viewport.",
+      
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "W1": "Verifique se cada ancestral ou o nó de texto não é cortado por transbordamento."
+      }
+    },
+    "QW-ACT-R41": {
+      "name": "A mensagem de erro descreve o valor do campo de formulário inválido",
+      "description": "Esta regra verifica se as mensagens de erro de texto fornecidas quando o usuário conclui um campo de formulário com valores inválidos ou usando um formato inválido, identifique a causa do erro ou como corrigir o erro.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "W1": "Verifique se as mensagens de erro de texto fornecidas, identifique a causa do erro ou como corrigir o erro."
+      }
+    },
+    "QW-ACT-R42": {
+      "name": "O elemento de objeto tem nome acessível não vazio",
+      "description": "Esta regra verifica se cada elemento 'objeto' tem um nome acessível não vazio.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "O alvo de teste tem um nome acessível não vazio.",
+        "F1": "O nome acessível do alvo de teste não existe ou está vazio ('')."
+      }
+    },
+    "QW-ACT-R43": {
+      "name": "Elemento rolável é o teclado acessível",
+      "description": "Esta regra verifica se os elementos roláveis podem ser rolados pelo teclado",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "Este elemento de seção rolável está incluído na navegação sequencial de foco.",
+        "F1": "Este elemento de seção rolável vertical/horizontalmente não está incluído na navegação sequencial de foco, nem tem descendentes que são"
+      }
+    },
+    "QW-ACT-R44": {
+      "name": "Links com nomes e contextos acessíveis idênticos servem a propósito equivalente",
+      "description": "Esta regra verifica que se vincula a nomes acessíveis e contexto idênticos aos mesmos recursos ou equivalentes.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "Os links` com o mesmo nome acessível têm conteúdo igual. ",
+        "W1": "Os` links` com o mesmo nome acessível têm conteúdo diferente. Verificar se o conteúdo é equivalente. "
+      }
+    },
+    "QW-ACT-R48": {
+      "name": "Elemento marcado como decorativo não é exposto",
+      "description": "Esta regra verifica se os elementos marcados como decorativos não estão incluídos na árvore de acessibilidade ou têm um papel de apresentação.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "O alvo de teste não está na árvore de acessibilidade.",
+        "F1": "O alvo de teste está na árvore de acessibilidade"
+      }
+    },
+    "QW-ACT-R49": {
+      "name": "Áudio ou vídeo que é reproduzido automaticamente não tem áudio que dura mais de 3 segundos",
+      "description": "Áudio ou vídeo que reproduz automaticamente não produz áudio por mais de 3 segundos.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "O alvo de teste é reproduzido por 3 segundos ou menos.",
+        "W1": "Não é possível coletar dados do elemento de destino de teste.",
+        "W2": "Verifique se o alvo de teste tem um mecanismo de controle visível"
+      }
+    },
+    "QW-ACT-R50": {
+      "name": "áudio ou vídeo que reproduz automaticamente tem um mecanismo de controle",
+      "description": "Áudio ou vídeo que reproduz automaticamente deve ter um mecanismo de controle",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "O alvo de teste tem um mecanismo de controle visível",
+        "W1": "Não é possível coletar dados do elemento de destino de teste.",
+        "W2": "Verifique se o alvo de teste tem um mecanismo de controle visível"
+      }
+    },
+    "QW-ACT-R51": {
+      "name": "O conteúdo exclusivo do elemento de vídeo é alternativo de mídia para texto",
+      "description": "Esta regra verifica o vídeo silencioso não transmitido é uma alternativa de mídia para texto na página.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "W1": "Não é possível coletar dados da meta de teste.",
+        "W2": "Verifique se o conteúdo do vídeo corresponde às informações no texto"
+      }
+    },
+    "QW-ACT-R52": {
+      "name": "Conteúdo exclusivo do elemento de vídeo tem uma faixa de descrição",
+      "description": "Esta regra verifica se a descrição rastreia que vem com elementos de vídeo não transmitidos, sem áudio, são descritivos.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "W1": "Não é possível coletar dados da meta de teste.",
+        "W2": "Verifique se o conteúdo visual tem uma alternativa acessível"
+      }
+    },
+    "QW-ACT-R53": {
+      "name": "Conteúdo exclusivo do elemento de vídeo tem transcrição",
+      "description": "Elementos de vídeo não transmitidos sem áudio devem ter todas as informações visuais disponíveis em uma transcrição.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "W1": "Não é possível coletar dados da meta de teste.",
+        "W2": "Verifique se o conteúdo visual tem uma alternativa acessível"
+      }
+    },
+    "QW-ACT-R54": {
+      "name": "O conteúdo exclusivo do elemento de vídeo tem uma trilha de áudio alternativa",
+      "description": "Elementos de vídeo não transmitidos sem áudio devem ter uma alternativa de áudio.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "W1": "Não é possível coletar dados da meta de teste.",
+        "W2": "Verifique se o conteúdo visual tem uma alternativa acessível"
+      }
+    },
+    "QW-ACT-R55": {
+      "name": "Conteúdo visual do elemento de vídeo tem descrição de áudio",
+      "description": "Esta regra verifica se os elementos de vídeo não transmitidos têm todas as informações visuais também contidas no áudio",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "W1": "Não é possível coletar dados da meta de teste.",
+        "W2": "O alvo de teste tem uma faixa de som, mas não podemos verificar o volume. Verifique se o alvo de teste possui áudio e se ele verificar se o conteúdo visual tem uma alternativa acessível"
+      }
+    },
+    "QW-ACT-R56": {
+      "name": "O conteúdo do elemento de vídeo é alternativo de mídia para texto",
+      "description": "Esta regra verifica o vídeo não transmitido é uma alternativa de mídia para texto na página.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "W1": "Não é possível coletar dados da meta de teste.",
+        "W2": "Verifique se o conteúdo do vídeo corresponde às informações no texto"
+      }
+    },
+    "QW-ACT-R57": {
+      "name": "Conteúdo visual do elemento de vídeo tem faixa de descrição",
+      "description": "Esta regra verifica se a descrição rastreia com elementos de vídeo não transmitidos são descritivos.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "W1": "Não é possível coletar dados da meta de teste.",
+        "W2": "O alvo de teste tem uma faixa de som, mas não podemos verificar o volume. Verifique se o alvo de teste possui áudio e se ele verificar se o conteúdo visual tem uma alternativa acessível"
+      }
+    },
+    "QW-ACT-R58": {
+      "name": "Conteúdo do elemento de áudio tem transcrição",
+      "description": "Os elementos de áudio não transmitidos devem ter uma alternativa de texto para todas as informações auditivas incluídas.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "W1": "Verifique se o áudio do destino do teste tem texto alternativo"
+      }
+    },
+    "QW-ACT-R59": {
+      "name": "O conteúdo do elemento de áudio é alternativo de mídia para texto",
+      "description": "Esta regra verifica o áudio é uma alternativa de mídia para texto na página.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "W1": "Verifique se o conteúdo do áudio corresponde às informações no texto"
+      }
+    },
+    "QW-ACT-R60": {
+      "name": "O conteúdo auditivo do elemento de vídeo tem legendas",
+      "description": "Esta regra verifica se as legendas estão disponíveis para obter informações de áudio em elementos de vídeo não transmitidos.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "W1": "Não é possível coletar dados da meta de teste.",
+        "W2": "O alvo de teste tem uma faixa de som, mas não podemos verificar o volume. Verifique se o alvo de teste possui áudio e se ele verificar se o conteúdo do áudio tem legendas correspondentes"
+      }
+    },
+    "QW-ACT-R61": {
+      "name": "Audio e visuais do elemento de vídeo têm transcrição",
+      "description": "Esta regra verifica se os elementos de vídeo não transmitidos têm todas as informações de áudio e visual disponíveis em uma transcrição.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "W1": "Não é possível coletar dados da meta de teste.",
+        "W2": "O alvo de teste tem uma faixa de som, mas não podemos verificar o volume. Verifique se o alvo de teste possui áudio e transcrição. Se ele verificar se a transcrição contém todas as informações visuais e de áudio do vídeo"
+      }
+    },
+    "QW-ACT-R62": {
+      "name": "Elemento na ordem de foco sequencial tem foco visível",
+      "description": "Esta regra verifica se cada elemento na ordem de foco seqüencial tem alguma indicação de foco visível.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "W1": "Verifique se o elemento tem alguma indicação de foco visível"
+      }
+    },
+    "QW-ACT-R63": {
+      "name": "O documento tem um marco com conteúdo não repetido",
+      "description": "Esta regra verifica se cada página tem um elemento com um papel semântico de referência começando com conteúdo não repetido",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "A página não tem conteúdo repetido.",
+        "W1": "Verifique se não há conteúdo não repetido após conteúdo repetido ou existe um elemento para o qual todos os seguintes são verdadeiros: - O elemento tem um papel semântico herdando do marco; e - o primeiro conteúdo perceptível (em ordem de árvore na árvore plana) que é um descendente inclusivo do elemento é conteúdo não repetido após conteúdo repetido; e - o elemento é incluído na árvore de acessibilidade "
+      }
+    },
+    "QW-ACT-R64": {
+      "name": "O documento tem direção para conteúdo não repetido",
+      "description": "Esta regra verifica se o conteúdo não repetido contém um título",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "A página não tem conteúdo repetido.",
+        "W1": "Verifique se não há conteúdo não repetido após conteúdo repetido ou existe um elemento para o qual todos os seguintes são verdadeiros: - O elemento não é repetido conteúdo após conteúdo repetido; e - o elemento tem um papel semântico do cabeçalho; e- O elemento é visível; e - o elemento está incluído na árvore de acessibilidade. "
+      }
+    },
+    "QW-ACT-R65": {
+      "name": "Elemento com crianças de apresentação não tem conteúdo focado",
+      "description": "Esta regra verifica se os elementos com uma função que faz com que seus filhos sejam apresentados não contêm elementos focalizados",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "O elemento não tem descendentes na árvore plana que fazem parte da navegação sequencial de foco",
+        "F1": "O elemento tem descendentes na árvore plana que fazem parte da navegação sequencial de foco"
+      }
+    },
+    "QW-ACT-R66": {
+      "name": "Menuitem tem nome acessível não vazio",
+      "description": "Esta regra verifica se cada elemento com uma função de menuitem tem um nome acessível não vazio.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "O alvo de teste tem um nome acessível não vazio.",
+        "F1": "O nome acessível do alvo de teste não existe ou está vazio ('')."
+      }
+    },
+    "QW-ACT-R67": {
+      "name": "O espaçamento de cartas em atributos de estilo não é! IMPORTANTE",
+      "description": "Esta regra verifica se o atributo de estilo não é usado para evitar ajustar o espaço de cartas usando! IMPORTANTE, exceto se for pelo menos 0,12 vezes o tamanho da fonte.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "A propriedade de espaçamento de cartas não é!",
+        "P2": "O espaçamento das cartas é pelo menos 0,12 vezes o tamanho da fonte.",
+        "P3": "O espaçamento de cartas em cascata não é o valor declarado",
+        "F1": "Os estilos CSS impedem que o espaçamento das letas esteja acima do valor mínimo"
+      }
+    },
+    "QW-ACT-R68": {
+      "name": "A altura da linha em atributos de estilo não é! IMPORTANTE",
+      "description": "Esta regra verifica se o atributo de estilo não é usado para evitar ajustar a altura da linha usando! IMPORTANTE, exceto se for pelo menos 1,5 vezes o tamanho da fonte.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "A propriedade de altura de linha não é!",
+        "P2": "A altura da linha é pelo menos 1,5 vezes o tamanho da fonte.",
+        "P3": "A altura da linha em cascata não é o valor declarado.",
+        "F1": "Os estilos CSS impedem que a altura da linha esteja acima do valor mínimo"
+      }
+    },
+    "QW-ACT-R69": {
+      "name": "Espaçamento de palavras em atributos de estilo não é! IMPORTANTE",
+      "description": "Esta regra verifica se o atributo de estilo não é usado para evitar ajustar o espaçamento das palavras usando! IMPORTANTE, exceto se for pelo menos 0,16 vezes o tamanho da fonte.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "A propriedade de espaçamento de palavras não é!",
+        "P2": "O espaçamento das palavras é pelo menos 0,16 vezes o tamanho da fonte",
+        "P3": "O espaçamento entre palavras em cascata não é o valor declarado",
+        "F1": "Os estilos CSS impedem que o espaçamento das palavras esteja acima do valor mínimo"
+      }
+    },
+    "QW-ACT-R70": {
+      "name": "Iframe com Tabindex negativo não tem elementos interativos",
+      "description": "Esta regra verifica se os elementos` iframe` com um valor de atributo `tabindex` negativo não contêm elementos interativos.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "O contexto de navegação aninhado não inclui elementos visíveis e parte da navegação sequencial de foco",
+        "F1": "O contexto de navegação aninhado inclui elementos visíveis e parte da navegação sequencial de foco"
+      }
+    },
+    "QW-ACT-R71": {
+      "name": "O elemento` meta` não tem atraso de atualização (sem exceção) ",
+      "description": "Esta regra verifica se o elemento` meta` não é usado para redirecionar ou refrescar atrasado ",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "O alvo de teste refresca/redireciona imediatamente.",
+        "F1": "O alvo de teste atualiza após {segundos} segundos.",
+        "F2": "O alvo de teste redireciona após {segundos} segundos."
+      }
+    },
+    "QW-ACT-R72": {
+      "name": "O primeiro elemento focado é o link para conteúdo não repetido",
+      "description": "Esta regra verifica se o primeiro elemento focalizado é um link para conteúdo não repetido na página",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "W1": "Verifique se o primeiro elemento focalizado tem um nome acessível que comunica que ele ignora o conteúdo",
+        "W2": "Verifique se o primeiro elemento focalizado pula para o conteúdo principal e seu nome acessível se comunica.",
+        "F1": "O primeiro elemento focalizado não é o teclado acionável.",
+        "F2": "O primeiro elemento focalizado não está na árvore de acessibilidade.",
+        "F3": "O primeiro elemento focalizado não tem o papel do link.",
+        "F4": "O primeiro elemento focalizado não pula para o conteúdo principal.",
+        "F5": "A página não possui elementos focalizáveis."
+      }
+    },
+    "QW-ACT-R73": {
+      "name": "Bloco de conteúdo repetido é dobrável",
+      "description": "Esta regra verifica se os blocos repetidos de conteúdo são dobráveis.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "A página não tem conteúdo repetido.",
+        "W1": "Para cada bloco de conteúdo repetido em cada meta de teste, que é antes (na árvore plana) pelo menos um nó de conteúdo não repetido após conteúdo repetido, verifique se todos os seguintes são verdadeiros: - Existe um instrumento para fazer tudonós neste bloco não visíveis; e - existe um instrumento para remover todos os nós neste bloco da árvore de acessibilidade. "
+      }
+    },
+    "QW-ACT-R74": {
+      "name": "O documento tem um instrumento para mover o foco para conteúdo não repetido",
+      "description": "Esta regra verifica se há um instrumento para mover o foco para conteúdo não repetido na página.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "A página não tem conteúdo repetido.",
+        "W1": "A página tem um ou mais instrumentos para mover o foco. Verifique se algum desses instrumentos está sendo usado antes de um bloco de conteúdo repetido e o foco é movido para um bloco de conteúdo não repetido.",
+        "W2": "Verifique se a página tem algum instrumento para mover o foco. Verifique se algum desses instrumentos está sendo usado antes de um bloco de conteúdo repetido e o foco é movido para um bloco de conteúdo não repetido."
+      }
+    },
+    "QW-ACT-R75": {
+      "name": "Blocos de desvio de conteúdo repetido",
+      "description": "Esta regra verifica se cada página tem um mecanismo para ignorar os repetidos blocos de conteúdo.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "A regra passou por causa da regra",
+        "W1": "A regra não pode dizer por causa da regra",
+        "F1": "A regra falhou por causa da regra"
+      }
+    },
+    "QW-ACT-R76": {
+      "name": "O texto tem um contraste aprimorado",
+      "description": "Esta regra verifica se o maior contraste possível de todos os personagens de texto com seus antecedentes atende ao requisito aprimorado de contraste",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "O elemento tem taxa de contraste maior que o mínimo.",
+        "P2": "Elemento não tem texto da linguagem humana.",
+        "P3": "O elemento tem gradiente com taxa de contraste maior que o mínimo.",
+        "W1": "O elemento tem uma sombra de texto que precisa de verificação manual.",
+        "W2": "Elemento tem uma imagem no fundo.",
+        "W3": "O elemento tem um gradiente que não podemos verificar.",
+        "F1": "O elemento tem taxa de contraste menor que o mínimo.",
+        "F2": "O elemento tem gradiente com taxa de contraste menor que o mínimo"
+      }
+    }
+  },
+  "wcag-techniques": {
+    "QW-WCAG-T1": {
+      "name": "Fornecendo alternativas de texto para os elementos da área de mapas de imagem",
+      "description": "Esta técnica verifica o texto alternativa de elementos de área de mapas de imagens",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "W1": "Por favor, verifique se o atributo` alt 'descreve corretamente a área correspondente da imagem. ",
+        "F1": "O atributo` alt 'não existe ou está vazio (' '). "
+      }
+    },
+    "QW-WCAG-T2": {
+      "name": "Usando elementos de legenda para associar as legendas da tabela de dados a tabelas de dados",
+      "description": "Esta técnica verifica o elemento de legenda corretamente usa em tabelas",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "W1": "Por favor, verifique se o elemento 'Legenda' identifica a tabela corretamente.",
+        "F1": "O elemento` legenda 'não existe ou está vazio (' '). "
+      }
+    },
+    "QW-WCAG-T3": {
+      "name": "Fornecendo uma descrição para grupos de controles de formulário usando elementos 'fieldset' e 'legend' ", 
+      "description": "Esta técnica verifica o uso correto do elemento de descrição para controles de formulário",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "W1": "Por favor, verifique se a descrição 'legend' é válida. ",
+        "F1": "O elemento` fieldset` não está dentro nem referenciando um elemento `forma`.",
+        "F2": "O elemento` legend` não existe ou está vazio (''). "
+      }
+    },
+    "QW-WCAG-T4": {
+      "name": "Usando o atributo de resumo do elemento da tabela para fornecer uma visão geral das tabelas de dados",
+      "description": "Esta técnica verifica o uso correto do atributo de resumo para elementos da tabela",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "W1": "Por favor, verifique se o resumo é uma descrição válida da tabela.",
+        "F1": "O resumo está vazio.",
+        "F2": "A legenda é uma duplicata do resumo"
+      }
+    },
+    "QW-WCAG-T5": {
+      "name": "Usando atributos alt em imagens usadas como botões de envio",
+      "description": "Esta técnica verifica todos os elementos de entrada que são botões usam texto alt",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "W1": "Por favor, verifique se o valor do atributo alt descreve corretamente a função do botão.",
+        "F1": "O elemento de entrada não possui um atributo alt.",
+        "F2": "O elemento de entrada possui um atributo alt vazio."
+      }
+    },
+    "QW-WCAG-T6": {
+      "name": "Usando o teclado e outras funções específicas do dispositivo",
+      "description": "O objetivo desta técnica é verificar a paridade de eventos específicos de teclado e específicos para o mouse quando o código que tem uma função de script associada a um evento é usada",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "O atributo do evento do mouse tem um teclado equivalente.",
+        "W1": "O alvo de teste tem um evento de teclado, mas não podemos verificar se é equivalente ao evento do mouse"
+      }
+    },
+    "QW-WCAG-T7": {
+      "name": "Fornecendo definições para abreviações usando o elemento ABBR",
+      "description": "O objetivo desta técnica é fornecer expansões ou definições para abreviações usando o elemento ABBR",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "O alvo de teste tem a definição no atributo do título.",
+        "F1": "O alvo de teste não tem a definição no atributo do título"
+      }
+    },
+    "QW-WCAG-T8": {
+      "name": "Falha no critério de sucesso 1.1.1 e 1.2.1 devido ao uso de alternativas de texto que não são alternativas",
+      "description": "Isso descreve uma condição de falha para todas as técnicas que envolvem alternativas de texto. Se o texto na alternativa 'text'não poderá ser usada no lugar do conteúdo não-texto sem perder informações ou função, então falha porque não é, de fato, de fato, uma alternativa ao conteúdo não-texto ",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "W1": "TEXTO ALTERNATIVA NECESSIDADE DE VERIÇÃO MANUAL.",
+        "F1": "A alternativa de texto não é na verdade uma alternativa de texto para o conteúdo que não é texto."
+      }
+    },
+    "QW-WCAG-T9": {
+      "name": "Organizando uma página usando títulos",
+      "description": "O objetivo desta técnica é garantir que as seções tenham títulos que os identifiquem e que o cabeçalho seja usado na ordem correta",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "W1": "Por favor, verifique se os cabeçalhos são usados para dividir a página corretamente.",
+        "F1": "Os títulos não estão na ordem correta.",
+        "F2": "O número do cabeçalho está faltando.",
+        "F3": "Os títulos não começam com H1"
+      }
+    },
+    "QW-WCAG-T10": {
+      "name": "Combinando links de imagem e texto adjacentes para o mesmo recurso",
+      "description": "O objetivo dessa técnica é fornecer texto e representações icônicas de links sem tornar a página da web mais confusa ou difícil para usuários de teclado ou usuários de tecnologia assistiva. Como usuários diferentes encontram texto e ícones mais utilizáveis, fornecendo ambosa ligação.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "O elemento A contém uma imagem que possui um atributo alt vazio.",
+        "W1": "O link contém uma imagem que possui um atributo ALT que deve ser verificado manualmente.",
+        
+        "F1": "O texto do link é igual ao texto alternativo da imagem."
+      }
+    },
+    "QW-WCAG-T11": {
+      "name": "Fornecendo alternativas de texto em elementos de applet",
+      "description": "Forneça uma alternativa de texto para um applet usando o atributo ALT para rotular um applet e fornecer a alternativa de texto no corpo do elemento de applet. Nesta técnica, ambos os mecanismos são necessários devido ao suporte variável do atributo ALT e do corpo do applettexto por agentes de usuários. ",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "W1": "Por favor, verifique se os valores do atributo alt e o texto do corpo descrevem corretamente o elemento applet.",
+        "F1": "O elemento applet não contém um atributo alt.",
+        "F2": "O elemento applet tem um atributo alt vazio.",
+        "F3": "O elemento applet não contém texto alternativo em seu corpo"
+      }
+    },
+    "QW-WCAG-T12": {
+      "name": "Falha no critério de sucesso 1.3.1 devido ao uso de elementos TH, elementos de legenda ou atributos de resumo não vazios nas tabelas de layout",
+      "description": "O objetivo desta técnica é descrever uma falha que ocorre quando uma tabela usada apenas para layout inclui os elementos, um atributo de resumo ou um elemento de legenda. Esta é uma falha porque usa marcação estrutural (ou semântica) apenas para apresentação. A intenção dos elementos da tabela HTML e XHTML é apresentar dados. ",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "W1": "Não há elementos incorretos usados na tabela de layout.",
+        "F1": "A tabela tem um resumo não vazio - altere -o se for uma tabela de layout.",
+        "F2": "A tabela possui um elemento da TH - altere se for uma tabela de layout.",
+        "F3": "A tabela possui um elemento de legenda - altere se for uma tabela de layout."
+      }
+    },
+    "QW-WCAG-T13": {
+      "name": "Falha no critério de sucesso 2.2.2 devido ao uso do elemento pisca",
+      "description": "O elemento pisca, embora não faça parte da especificação oficial HTML ou XHTML, é suportado por muitos agentes de usuários. Isso faz com que qualquer texto dentro do elemento pisque a uma taxa predeterminada. Isso não pode ser interrompido pelo usuário, nem pode ser desativadoComo preferência. O piscar continua enquanto a página for exibida. Portanto, o conteúdo que usa pisca falha no critério de sucesso, porque piscar pode continuar por mais de três segundos. ",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "Blink não é usado.",
+        "F1": "Usado elemento pisca."
+      }
+    },
+    "QW-WCAG-T14": {
+      "name": "Usando atributos de identificação e cabeçalhos para associar células de dados a células de cabeçalho em tabelas de dados",
+      "description": "Esta técnica verifica se as células de dados estão associadas às células do cabeçalho nas tabelas de dados",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "I2": "Esta tabela é uma tabela de layout.",
+        "I3": "Nenhum atributo de cabeçalho é usado nesta tabela de dados.",
+        "P1": "Os atributos de identificação e cabeçalhos são usados corretamente.",
+        "F1": "Esta tabela é uma tabela de layout com atributos de identificação ou cabeçalhos",
+        "F2": "Existem` id`s duplicados nesta tabela de dados. ",
+        "F3": "Os atributos de ID e cabeçalhos não são usados corretamente."
+      }
+    },
+    "QW-WCAG-T15": {
+      "name": "Usando o elemento de link e as ferramentas de navegação",
+      "description": "O objetivo desta técnica é descrever como o elemento de link pode fornecer metadados sobre a posição de uma página HTML dentro de um conjunto de páginas da web ou pode ajudar na localização do conteúdo com um conjunto de páginas da web",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "I2": "O elemento não contém um atributo REL ou não pertence à navegação.",
+        "P1": "O link tem atributos REL e HREF e pertence à navegação",
+        "F1": "O elemento não contém um atributo HREF e pertence à navegação"
+      }
+    },
+    "QW-WCAG-T16": {
+      "name": "Usando HTML de acordo com a Spec",
+      "description": "Esta técnica verifica se a página da web html ou xhtml segue a especificação.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "O documento HTML não tem erros.",
+        "W1": "O documento HTML tem avisos.",
+        "F1": "O documento HTML tem erros."
+      }
+    },
+    "QW-WCAG-T17": {
+      "name": "Rótulos de posicionamento para maximizar a previsibilidade dos relacionamentos",
+      "description": "Esta técnica verifica a posição correta dos rótulos em formas",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "O campo de formulário tem um rótulo bem posicionado.",
+        "F1": "O campo de formulário possui rótulo posicionado incorreto.",
+        "F2": "O rótulo do campo de formulário está vazio.",
+        "F3": "O rótulo do campo de formulário não é visível."
+      }
+    },
+    "QW-WCAG-T18": {
+      "name": "Usando a marcação da tabela para apresentar informações tabulares",
+      "description": "O objetivo desta técnica é apresentar informações tabulares de uma maneira que preserve as relações dentro das informações, mesmo quando os usuários não podem ver a tabela ou o formato de apresentação é alterado. Usando o elemento da tabela com os elementos filho TR, TH e TD faz issoRelacionamentos perceptíveis. ",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "Há pelo menos uma ocorrência de mesa, tr, td e th.",
+        "F1": "Faltam elementos infantis da mesa."
+      }
+    },
+    "QW-WCAG-T19": {
+      "name": "Fornecendo botões de envio",
+      "description": "O objetivo desta técnica é fornecer um mecanismo que permita aos usuários solicitar mudanças de contexto explicitamente. O uso pretendido de um botão de envio é gerar uma solicitação HTTP que envie dados inseridos em um formulário, por isso é um controle apropriado para usarpor causar uma mudança de contexto. ",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "O formulário contém um dos seguintes elementos de entrada [TIPO ~ = 'Submite Image'], Button [Type = 'Submit'].",
+        "F1": "A tag do formulário não contém nenhum dos seguintes elementos entrada [TIPO ~ = 'Enviar imagem'], botão [type = 'submeter']."
+      }
+    },
+    "QW-WCAG-T20": {
+      "name": "Complementando o texto do link com o atributo do título",
+      "description": "Complementando o texto do link com o atributo do título",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "W1": "Por favor, verifique se o atributo de título do elemento descreve corretamente o link.",
+        "F1": "O atributo do título do elemento está vazio.",
+        "F2": "O elemento contém um atributo de título igual ao texto no link"
+      }
+    },
+    "QW-WCAG-T21": {
+      "name": "Falha nos critérios de sucesso 2.4.4, 2.4.9 e 4.1.2 devido a não fornecer um nome acessível para uma imagem que é o único conteúdo em um link",
+      "description": "Esta técnica verifica a alternativa de texto de imagens que são o único conteúdo de um link",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "O link tem um nome acessível.",
+        "F1": "A imagem não tem um nome acessível."
+      }
+    },
+    "QW-WCAG-T22": {
+      "name": "Falha no critério de sucesso 3.2.1 e 3.2.5 devido à abertura de uma nova janela assim que uma nova página for carregada",
+      "description": "O objetivo desta técnica é garantir que as páginas não desoriem os usuários, abrindo uma ou mais novas janelas que atinjam o foco automaticamente assim que uma página for carregada",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "O navegador não abriu a nova guia.",
+        "F1": "O navegador abriu uma nova guia."
+      }
+    },
+    "QW-WCAG-T23": {
+      "name": "Adicionando um link na parte superior de cada página que vai diretamente para a área de conteúdo principal",
+      "description": "O objetivo desta técnica é fornecer um mecanismo para ignorar blocos de material que são repetidos em várias páginas da web, pulando diretamente para o conteúdo principal da página da web",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "W1": "O primeiro controle focalizado é um link visível para um elemento <Main>.",
+        
+        "W2": "O primeiro controle focalizado é um link visível para algum conteúdo na página da web. Verifique se ele vincula ao conteúdo principal.",
+        "F1": "O primeiro controle focalizado nos links da página da web para um elemento inexistente",
+        "F2": "O primeiro controle focalizado nos links da página da web ao topo da página.",
+        "F3": "O primeiro controle focalizado na página da web não vincula ao conteúdo local",
+        "F4": "O primeiro controle focado na página da web não é um link.",
+        "F5": "Esta página da web não possui controles focalizados"
+      }
+    },
+    "QW-WCAG-T24": {
+      "name": "Critérios de falha do sucesso 2.1.1, 2.4.7 e 3.2.1 devido ao uso do script para remover o foco quando o foco é recebido",
+      "description": "O conteúdo que normalmente recebe foco quando o conteúdo é acessado pelo teclado pode ter esse foco removido por scripts.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "Elemento manteve o foco.",
+        "F1": "O elemento não manteve o foco."
+      }
+    },
+    "QW-WCAG-T25": {
+      "name": "Usando o atributo de escopo para associar células de cabeçalho e células de dados em tabelas de dados",
+      "description": "O objetivo desta técnica é associar células de cabeçalho a células de dados em tabelas complexas usando o atributo de escopo",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "O atributo de escopo do elemento corresponde aos seguintes valores: Col, Row, Colgroup, RowGroup.",
+        "F1": "O elemento não contém um atributo de escopo.",
+        
+        "F2": "O atributo de escopo do elemento está vazio.",
+        "F3": "O atributo de escopo do elemento não corresponde a nenhum dos seguintes valores: Col, Row, Colgroup, RowGroup."
+      }
+    },
+    "QW-WCAG-T26": {
+      "name": "Falha no critério de sucesso 4.1.2 Devido ao uso do script para fazer o DIV ou abranger um controle de interface do usuário em HTML sem fornecer uma função para o controle",
+      "description": "Essa falha demonstra como o uso de elementos HTML genéricos para criar controles de interface do usuário pode tornar os controles inacessíveis para a tecnologia auxiliar",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "O elemento é um controle de interface do usuário com um manipulador de eventos.",
+        "F1": "O elemento é um controle de interface do usuário forçado sem o atributo de função adequado."
+      }
+    },
+    "QW-WCAG-T27": {
+      "name": "Falha no critério de sucesso 1.4.8 devido ao uso de texto justificado (alinhado às margens esquerda e direita)",
+      "description": "Essa falha descreve situações em que os blocos de texto que são justificados (alinhados às margens esquerda e à direita) ocorrem no HTML, usando o atributo 'alinhado'",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "Este conteúdo não é justificado.",
+        "F1": "Esse conteúdo não deve ser justificado."
+      }
+    },
+    "QW-WCAG-T28": {
+      "name": "Usando` por cento, em, nomes` para tamanhos de fonte ",
+      "description": "Esta técnica verifica se todo o atributo de tamanho de fonte usa porcentagem, EM ou nomes.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "Este alvo de teste possui uma propriedade CSS de tamanho de fonte usando um valor unitário relativo com o sinalizador importante.",
+        "F1": "Esse alvo de teste possui uma propriedade CSS de tamanho de fonte usando um valor unitário absoluto com o sinalizador importante"
+      }
+    },
+    "QW-WCAG-T29": {
+      "name": "Especificando o alinhamento à esquerda ou à direita no CSS",
+      "description": "Esta técnica descreve como alinhar blocos de texto à esquerda ou à direita, definindo a propriedade CSS Text-Align",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "Este alvo de teste possui uma propriedade CSS de alinhamento de texto igual a justificar",
+        "F1": "Esse alvo de teste possui uma propriedade CSS de alinhamento de texto não igual a justificar"
+      }
+    },
+    "QW-WCAG-T30": {
+      "name": "Falha no critério de sucesso 2.2.2 devido ao uso da decoração de texto: piscar sem um mecanismo para impedi-lo em menos de cinco segundos",
+      "description": "O CSS define o valor do piscar para a propriedade de decoração de texto. Quando usado, causa qualquer texto em elementos com essa propriedade piscar a uma taxa predeterminada. Isso não pode ser interrompido pelo usuário, nem pode ser desativado como preferência do agente do usuário. O piscar continua enquanto a página for exibida. Portanto, o conteúdo que usa a decoração de texto: Blink falha no critério de sucesso porque piscar pode continuar por mais de três segundos. ",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "F1": "Este alvo de teste possui uma propriedade de `text-decoration` com o valor 'blink'"
+      }
+    },
+    "QW-WCAG-T31": {
+      "name": "Falha no critério de sucesso 1.4.3, 1.4.6 e 1.4.8 devido à especificação de cores de primeiro plano sem especificar cores de fundo ou vice -versa",
+      "description": "Usuários com perda de visão ou desafios cognitivos, de linguagem e aprendizado geralmente preferem combinações específicas de primeiro plano e cor de fundo. Em alguns casos, indivíduos com baixa visão acharão muito mais fácil ver uma página da web com texto em branco em um fundo preto e elesPode ter definido seu agente do usuário para apresentar esse contraste. Muitos agentes de usuários possibilitam que os usuários escolham uma preferência sobre as cores de primeiro plano ou plano de fundo que gostariam de ver sem substituir todos os estilos especificados pelo autor. Isso possibilita que os usuários visualizemPáginas onde as cores não foram especificadas pelo autor em sua combinação de cores preferida. ",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "O alvo de teste possui um autor definido por cores e propriedades CSS.",
+        "F1": "O alvo de teste possui uma propriedade CSS de cores definida pelo autor, mas não uma propriedade CSS de fundo.",
+        "F2": "O alvo de teste possui uma propriedade em segundo plano definida pelo autor, mas não uma propriedade CSS colorida"
+      }
+    },
+    "QW-WCAG-T32": {
+      "name": "Usando OL, UL e DL para listas ou grupos de links",
+      "description": "O objetivo desta técnica é criar listas de itens relacionados usando elementos de lista apropriados para seus propósitos",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "W1": "Verifique se o conteúdo que tem a aparência visual de uma lista (com ou sem balas) é marcada como uma lista não ordenada.",
+        "W2": "Verifique se o conteúdo que tem a aparência visual de uma lista numerada é marcada como uma lista ordenada.",
+        "W3": "Verifique se o conteúdo é marcado como uma lista de definições quando os termos e suas definições são apresentados na forma de uma lista.",
+        "F1": "Um item de lista não está contido em um elemento de lista correto."
+      }
+    },
+    "QW-WCAG-T33": {
+      "name": "Usando listas de descrição - dd, dt",
+      "description": "Garante <dt> e <dd> elementos estão contidos por um <dl>",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "O alvo de teste está contido em um elemento de lista de descrição correto.",
+        "F1": "O alvo de teste não está contido em um elemento de lista de descrição correto."
+      }
+    },
+    "QW-WCAG-T34": {
+      "name": "Usando listas de descrição - dl",
+      "description": "Garante que os elementos <DL> estejam estruturados corretamente. Os elementos <DL> devem conter diretamente diretamente os grupos de <Dt> e <dd>, <dd>, <Script>, <Sodemplate> ou <div> elementos",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "O elemento da lista de descrição está estruturado corretamente",
+        "F1": "O elemento da lista de descrição contém um tipo de elemento incorreto",
+        "F2": "O elemento da lista de descrição não é ordenado corretamente"
+      }
+    }
+  },
+  "best-practices": {
+    "QW-BP1": {
+      "name": "Usando H1-H6 para identificar títulos",
+      "description": "Recomenda -se usar a marcação HTML e XHTML para fornecer código semântico para títulos no conteúdo",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "W1": "Verifique se a marcação do cabeçalho é usada quando o conteúdo é um título.",
+        "F1": "Esta página não usa títulos."
+      }
+    },
+    "QW-BP2": {
+      "name": "Imagens concisas textos alt",
+      "description": "Image alt text atributo com mais de 100 caracteres",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "O atributo de texto IMG ALT tem menos de 100 caracteres.",
+        "F1": "O atributo de texto IMG ALT tem mais de 100 caracteres"
+      }
+    },
+    "QW-BP4": {
+      "name": "Links agrupados não dentro de um elemento nav",
+      "description": "Conjunto de 10 ou mais links não agrupados em uma lista (NAV)",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "F1": "Foi encontrado um grupo de 10 ou mais links não agrupados dentro de um elemento NAV"
+      }
+    },
+    "QW-BP5": {
+      "name": "Usando elementos da tabela dentro de outros elementos da tabela",
+      "description": "Não é recomendável usar elementos da tabela dentro de outros elementos da tabela",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "Não há elementos de tabela dentro de outros elementos da tabela.",
+        "F1": "Existem elementos de tabela dentro de outros elementos da tabela"
+      }
+    },
+    "QW-BP6": {
+      "name": "O elemento de título não é muito longo (100 caracteres)",
+      "description": "O elemento de título da página da web não deve ter mais de 100 caracteres",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "O título da página tem menos de 100 caracteres.",
+        "F1": "O título da página tem 100 ou mais caracteres."
+      }
+    },
+    "QW-BP7": {
+      "name": "O elemento de título contém ascii-arte",
+      "description": "O elemento de título contém ascii-arte",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "O elemento do título não contém arte ascii.",
+        "F1": "O elemento do título contém arte ASCII."
+      }
+    },
+    "QW-BP8": {
+      "name": "Os títulos com imagens devem ter um nome acessível",
+      "description": "Os títulos com pelo menos uma imagem devem ter um nome acessível",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "Este cabeçalho com pelo menos uma imagem tem um nome acessível.",
+        "F1": "Este cabeçalho com pelo menos uma imagem não tem um nome acessível"
+      }
+    },
+    "QW-BP9": {
+      "name": "Elemento de tabela sem células de cabeçalho tem uma legenda",
+      "description": "Uma tabela sem os elementos deve ter um elemento de legenda para descrevê -la.",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "A tabela não possui células de cabeçalho, mas tem uma legenda.",
+        "F1": "A tabela não possui células de cabeçalho ou legenda."
+      }
+    },
+    "QW-BP10": {
+      "name": "Os elementos HTML são usados para controlar a apresentação visual do conteúdo",
+      "description": "Nenhum elemento HTML é usado para controlar a apresentação visual do conteúdo",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "A página da web não usa elementos para controlar a apresentação do conteúdo visual.",
+        "F1": "A página da web usa o elemento {nome} para controlar a apresentação do conteúdo visual."
+      }
+    },
+    "QW-BP11": {
+      "name": "Usando o BR para fazer uma lista",
+      "description": "Usando 3 elementos consecutivos de BR",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "Existem menos de 3 br.",
+        "F1": "Os elementos` BR 'estão sendo usados como uma lista. "
+      }
+    },
+    "QW-BP12": {
+      "name": "Usando o SCOPE COL AND ROW",
+      "description": "Usando o SCOPE COL na primeira linha e linha do escopo no primeiro elemento de cada linha",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "O atributo de escopo é usado corretamente.",
+        "F1": "O atributo de escopo é usado incorretamente."
+      }
+    },
+    "QW-BP13": {
+      "name": "Usando links consecutivos com o mesmo href e um contém uma imagem",
+      "description": "Usando links consecutivos com o mesmo href em que um dos links contém uma imagem",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "Não há links consecutivos com o mesmo HREF em que um dos links continha uma imagem.",
+        "F1": "Existem links consecutivos com o mesmo HREF em que um dos links continha uma imagem"
+      }
+    },
+    "QW-BP15": {
+      "name": "Pelo menos um atributo de largura de um elemento HTML é expresso em valores absolutos",
+      "description": "Pelo menos um atributo de largura de um elemento HTML é expresso em valores absolutos",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "O atributo` largura 'do alvo de teste usa unidades relativas. ",
+        "F1": "O atributo 'Width' do alvo de teste usa unidades absolutas"
+      }
+    },
+    "QW-BP17": {
+      "name": "Adicionando um link no início de um bloco de conteúdo repetido para ir ao final do bloco",
+      "description": "O objetivo desta técnica é fornecer um mecanismo para ignorar um bloco de material, pulando para o final do bloco",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "W1": "Este link pula um bloco de conteúdo.",
+        "F1": "Esta página não tem links."
+      }
+    },
+    "QW-BP18": {
+      "name": "Usando valores percentuais no CSS para tamanhos de contêiner",
+      "description": "O objetivo desta técnica é permitir que os usuários aumentem o tamanho do texto sem precisar rolar horizontalmente para ler esse texto. Para usar essa técnica, um autor especifica a largura dos contêineres de texto usando valores percentuais",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "Esse alvo de teste possui uma propriedade 'largura' CSS usando valor percentual com o sinalizador importante",
+        "F1": "Esse alvo de teste possui uma propriedade 'largura'CSS usando o valor` px` com o sinalizador importante. ",
+        "F2": "Esse alvo de teste possui uma propriedade 'Width' CSS não usando o valor percentual com o sinalizador importante"
+      }
+    },
+    "QW-BP19": {
+      "name": "Banner de referência é o nível superior",
+      "description": "Garante que o marco do banner esteja no nível superior",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "O marco do banner está no nível superior.",
+        "F1": "O marco do banner não está no nível superior"
+      }
+    },
+    "QW-BP20": {
+      "name": "Marco sem banner duplicado",
+      "description": "Garante que o documento tenha no máximo um marco de banner",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "Há um marco de banner",
+        "F1": "Existem vários marcos de banner"
+      }
+    },
+    "QW-BP21": {
+      "name": "Landmark No Duplicate ContentInfo",
+      "description": "Garante que o documento tenha no máximo um marco contentinfo",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "Há um marco contentinfo",
+        "F1": "Existem vários marcos de banner"
+      }
+    },
+    "QW-BP22": {
+      "name": "Landmark tem um principal",
+      "description": "Garante que o documento tenha um marco principal",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "Há um marco principal.",
+        "F1": "Existem vários marcos principais"
+      }
+    },
+    "QW-BP23": {
+      "name": "ListItems são usados semanticamente",
+      "description": "Garante <li> elementos são usados semanticamente",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "ListItem é usado semanticamente",
+        "F1": "ListItem não é usado semanticamente não usado semanticamente"
+      }
+    },
+    "QW-BP24": {
+      "name": "Listas são usadas corretamente",
+      "description": "Garante que as listas sejam estruturadas corretamente",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "Lista é usada corretamente",
+        "F1": "Lista não é usada corretamente"
+      }
+    },
+    "QW-BP25": {
+      "name": "Landmark complementar é o nível superior",
+      "description": "Garante que o marco complementar ou o lado esteja no nível superior",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "O marco complementar está no nível superior.",
+        "F1": "O marco complementar não está no nível superior"
+      }
+    },
+    "QW-BP26": {
+      "name": "Landmark complementar é o nível superior",
+      "description": "Garante",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "O marco complementar está no nível superior.",
+        "F1": "O marco complementar não está no nível superior"
+      }
+    },
+    "QW-BP27": {
+      "name": "Landmark Main é o nível superior",
+      "description": "Garante que o marco principal esteja no nível superior",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "O marco principal está no nível superior.",
+        "F1": "O marco principal não está no nível superior"
+      }
+    }
+  }
+}
