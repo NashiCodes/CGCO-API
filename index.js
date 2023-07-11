@@ -38,13 +38,27 @@ urls.forEach(async (url) => {
 
 
   // Evaluates the given options - will only return after all urls have finished evaluating or resulted in an error
-  const reports = await qualweb.evaluate(qualwebOptions);
+  const raw_eport = await qualweb.evaluate(qualwebOptions);
+
+  const report = cleanReport(raw_eport);
 
   fs.writeFileSync(
     "./reports/".concat(url.id.concat("-emag.json")),
-    JSON.stringify(reports)
+    JSON.stringify(report)
   );
 
   // Stops the QualWeb core engine
   await qualweb.stop();
 });
+
+function cleanReport(raw_report) {
+  const report = {};
+  for (const url in raw_report) {
+    report[url] = {
+      date : raw_report[url].system.date,
+      metadata: raw_report[url].metadata,
+      modules: raw_report[url].modules,
+    };
+  }
+  return report;
+}
