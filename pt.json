@@ -1246,6 +1246,15 @@
         "P1": "O marco principal está no nível superior.",
         "F1": "O marco principal não está no nível superior"
       }
+    },
+    "QW-BP28": {
+      "name": "Elemento de cabeçalho H1 é usado e unico",
+      "description": "Garante que existe somente um cabeçalho H1",
+      "results": {
+        "I1": "Nenhum alvo de teste encontrado.",
+        "P1": "O elemento de cabeçalho H1 é usado e único.",
+        "F1": "O elemento de cabeçalho H1 não é usado ou não é único."
+      }
     }
   }
 }
