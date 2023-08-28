@@ -6,10 +6,9 @@ const urlsResponse = await fetch(
   "https://wpteste2.ufjf.br/wp-json/acessibilidade/v1/pages_posts"
 );
 
-const urls = await urlsResponse.json();
+const sitesUrls = await urlsResponse.json();
 
-urls.forEach(async (url) => {
-
+sitesUrls.forEach(async (site) => {
   const plugins = {
     adBlock: true, // Default value = false
     stealth: true, // Default value = false
@@ -34,16 +33,15 @@ urls.forEach(async (url) => {
   const raw_translate = fs.readFileSync("./pt.json", "utf8");
   //   qualwebOptions.translate = await fetch("./pt.json").then((res) => res.json());
   qualwebOptions.translate = JSON.parse(raw_translate);
-  qualwebOptions.urls = [...url.urls];
-
+  qualwebOptions.urls = [...site.urls];
 
   // Evaluates the given options - will only return after all urls have finished evaluating or resulted in an error
-  const raw_eport = await qualweb.evaluate(qualwebOptions);
+  const raw_report = await qualweb.evaluate(qualwebOptions);
 
-  const report = cleanReport(raw_eport);
+  const report = cleanReport(raw_report);
 
   fs.writeFileSync(
-    "./reports/".concat(url.id.concat("-emag.json")),
+    "./api/reports/".concat(site.id.concat("-emag.json")),
     JSON.stringify(report)
   );
 
@@ -53,9 +51,21 @@ urls.forEach(async (url) => {
 
 function cleanReport(raw_report) {
   const report = {};
+
   for (const url in raw_report) {
+    for (const module in raw_report[url].modules) {
+      for (const rules in raw_report[url].modules[module].assertions) {
+        if (
+          raw_report[url].modules[module].assertions[rules].metadata[
+            "outcome"
+          ] === "inapplicable"
+        ) {
+          delete raw_report[url].modules[module].assertions[rules];
+        }
+      }
+    }
     report[url] = {
-      date : raw_report[url].system.date,
+      date: raw_report[url].system.date,
       metadata: raw_report[url].metadata,
       modules: raw_report[url].modules,
     };
